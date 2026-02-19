@@ -27,8 +27,14 @@ public class Campaign {
 
     public void addEvent(QuestEvent e) { events.add(e); }
 
+    // Original method (keep it)
     public void removeEventById(int eventId) {
         events.removeIf(e -> e.getEventId() == eventId);
+    }
+
+    // Alias used by the GUI (so GuiMain can call deleteEvent)
+    public void deleteEvent(int eventId) {
+        removeEventById(eventId);
     }
 
     public List<QuestEvent> getEvents() {
