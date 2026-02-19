@@ -1,0 +1,26 @@
+Revised UML (text summary)
+
+User
+- name
+- campaigns : List<Campaign>
+
+Campaign
+- campaignId, name, archived
+- events : List<QuestEvent>
+
+QuestEvent
+- eventId, title, startTime, endTime?, realm
+
+WorldClock
+- currentTime : GlobalTime
+
+GlobalTime
+- totalMinutes
+- toDays/toHours/toMinutes, plus(minutes)
+
+Realm
+- name, offsetMinutes
+- toLocalTime(worldTime)
+
+TimelineView
+- eventsAll, eventsDay(now), eventsWeek(now)
