@@ -1,0 +1,10 @@
+1) Open a terminal in this folder (GuildQuest/updated)
+
+2) Build the fat jar (includes dependencies):
+   ./gradlew clean fatJar
+
+3) The jar will be created at:
+   build/libs/GuildQuest-all.jar
+
+4) Run it:
+   java -jar build/libs/GuildQuest-all.jar
