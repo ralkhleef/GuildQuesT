@@ -1,4 +1,4 @@
-# GuildQuest (Assignment 2) - Runnable Submission
+# GuildQuest 
 
 ## Run
 Requires Java 17+.
@@ -9,9 +9,3 @@ java -jar GuildQuest.jar
 
 This launches a **text-based** version of GuildQuest (no JavaFX required).
 
-## Implemented requirements (>= 1/2)
-- WorldClock time tracked in days/hours/min (GlobalTime)
-- Users manage Campaigns (add/rename/archive/delete)
-- Campaigns contain QuestEvents (title, start time, optional end time)
-- Realms with a **fixed offset** from WorldClock time; events display World time and Realm-local time
-- Timeline views implemented: All / Day / Week
